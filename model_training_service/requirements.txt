@@ -1,0 +1,8 @@
+pandas
+scipy
+scikit-learn
+pymongo
+flask
+numpy
+psutil
+tqdm
