@@ -36,9 +36,34 @@ These instructions will help you get a copy of the project up and running on you
 
 ### Installation
 
+## Installation
+
 1. Clone the repository to your local machine.
-2. Build the Docker image using the provided Dockerfile and run the container.
-3. Use `data_exploration.py` to connect to the database and perform EDA.
+
+    ```shell
+    git clone https://github.com/traagel/rec-sys.git
+    ```
+
+2. Navigate to the project directory.
+
+    ```shell
+    cd rec-sys
+    ```
+
+3. Run the Docker containers using Docker Compose. This command will build and start all services defined in your Docker Compose file.
+
+    ```shell
+    docker compose up
+    ```
+
+    The model training service will start a Flask server that listens for POST requests on port 5000.
+
+4. Send a POST request to the /recommend endpoint, for example using curl
+    
+    ```shell
+    curl -X POST -H "Content-Type: application/json" -d '{"customername":"caf0fc6bf1f16076cec4a3394c07267d"}' http://172.19.0.3:5000/recommend
+    ```
+    
 
 ## Built With
 
@@ -48,10 +73,3 @@ These instructions will help you get a copy of the project up and running on you
 - PyMongo
 - Pandas
 
-## Authors
-
-- Mart Traagel - v0.1
-
-## Acknowledgments
-
-- Foxway for providing the dataset and the assignment.
