@@ -1,6 +1,6 @@
-# Foxway Data Engineering Homework Assignment
+# Data Engineering Homework Assignment
 
-This project involves setting up a MongoDB database in a Docker container and conducting exploratory data analysis (EDA) on a dataset provided by Foxway.
+This project involves setting up a MongoDB database in a Docker container and conducting exploratory data analysis (EDA) on a product dataset.
 
 ## Project Structure
 
